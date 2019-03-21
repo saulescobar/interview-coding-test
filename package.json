@@ -4,7 +4,8 @@
   "description": "ComparaOnline Software Engineer Test",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec/*.js"
+    "test": "cross-env TYPE_REPORT=1day mocha spec/*.js",
+    "after-30-days": "cross-env TYPE_REPORT=30days node src/coTest.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0"
   }
 }
