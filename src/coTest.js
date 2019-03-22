@@ -22,7 +22,7 @@ class CarInsurance {
             this.products[i].price -= 2;
           }
           else {
-            this.products[i].price -= 1;
+            this.products[i].price -= 4;
           }
           if (this.products[i].price < 0) {
             this.products[i].price = 0;
